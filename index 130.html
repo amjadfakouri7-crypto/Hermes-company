@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hermes Company</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Custom styles */
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("./images.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .staff-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("./images\ \(2\).jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 5rem 0;
+      }
+
+      .staff-img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #fff;
+      }
+
+      .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .partner-logo {
+        max-width: 150px;
+        filter: grayscale(100%);
+        transition: all 0.3s ease;
+      }
+
+      .partner-logo:hover {
+        filter: grayscale(0%);
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          min-height: 50vh;
+        }
+
+        .staff-img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">HERMES</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Shipping</a></li>
+                <li><a class="dropdown-item" href="#">Logistics</a></li>
+                <li><a class="dropdown-item" href="#">Consulting</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-warning" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">
+          A Global Center for New Computers
+        </h1>
+        <p class="lead mb-4">
+          Delivering excellence in technology and innovation
+        </p>
+        <a href="#contact" class="btn btn-warning btn-lg">Get Started</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="./download.jpg"
+              class="img-fluid rounded shadow"
+              alt="About Hermes"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold mb-4">About Hermes</h2>
+            <p class="lead mb-4">Hermes company delivers the goods</p>
+            <p class="mb-4">
+              We are best known for our scheduled services. We specialize in the
+              shipment of dry goods. We price by the hundredweight or by the
+              skid and deliver industry-leading transit times to and from the
+              USA... including Alaska.
+            </p>
+            <a href="#" class="btn btn-warning">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">Our Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./683accf396072-file-image-313334403-16x9.avif"
+                class="card-img-top"
+                alt="Global Center"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h3 class="card-title h4">Global Center</h3>
+                <p class="card-text">
+                  A worldwide hub for computer technology and innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./shanghai-nov-30-young-apple-600nw-66974062.webp"
+                class="card-img-top"
+                alt="Apple Service"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h3 class="card-title h4">Apple Service Center</h3>
+                <p class="card-text">
+                  Professional Apple device repair and maintenance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./image-9-1024x585.jpeg"
+                class="card-img-top"
+                alt="Dell Headquarters"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h3 class="card-title h4">Dell Headquarters</h3>
+                <p class="card-text">
+                  Authorized Dell service and support center.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">Why Choose Us</h2>
+        <p class="text-center lead mb-5">
+          Our corporate values form the basis of everything we do.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <i class="fa-solid fa-file-pdf feature-icon text-warning"></i>
+              <h3 class="h4 mb-3">Documentation</h3>
+              <p>Comprehensive documentation and reporting for all services.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <i class="fa-solid fa-paper-plane feature-icon text-warning"></i>
+              <h3 class="h4 mb-3">Independent</h3>
+              <p>Independent service provider with global reach.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <i class="fa-solid fa-user feature-icon text-warning"></i>
+              <h3 class="h4 mb-3">Personal</h3>
+              <p>Personalized service and attention to detail.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <i class="fa-solid fa-clock feature-icon text-warning"></i>
+              <h3 class="h4 mb-3">Sustainable</h3>
+              <p>Sustainable practices and long-term solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff Section -->
+   
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">Our Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./image-9-1024x585.jpeg"
+                class="card-img-top"
+                alt="Global Center"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h3 class="card-title h4">Global Center</h3>
+                <p class="card-text">
+                  A worldwide hub for computer technology and innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./shanghai-nov-30-young-apple-600nw-66974062.webp"
+                class="card-img-top"
+                alt="Apple Service"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h3 class="card-title h4">Apple Service Center</h3>
+                <p class="card-text">
+                  Professional Apple device repair and maintenance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./download.jpg"
+                class="card-img-top"
+                alt="Dell Headquarters"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h3 class="card-title h4">Dell Headquarters</h3>
+                <p class="card-text">
+                  Authorized Dell service and support center.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <section class="staff-section text-white">
+      <div class="container">
+        <h2 class="text-center display-4 fw-bold mb-5">Staff Directory</h2>
+        <h4 class="text-center h5 mb-5">Who Gives It's Personality?</h4>
+        <p class="text-center lead mb-5">
+          When we say we provide "worry-free transportation with personality,"
+          we mean it—and these are the people who provide it!
+        </p>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <img
+                src="./images.png"
+                alt="Kate Johnson"
+                class="staff-img mb-3"
+              />
+              <h3 class="h4">Kate Johnson</h3>
+              <p class="lead">Programmer Gaming</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <img
+                src="./Woman-with-Circle-Background-Graphics-26722128-1.png"
+                alt="Brian Wolf"
+                class="staff-img mb-3"
+              />
+              <h3 class="h4">Brian Wolf</h3>
+              <p class="lead">Programmer Website</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <img
+                src="./images.png"
+                alt="Mike Scavo"
+                class="staff-img mb-3"
+              />
+              <h3 class="h4">Mike Scavo</h3>
+              <p class="lead">Cloud Specialist</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <img
+                src="./Woman-with-Circle-Background-Graphics-26722128-1.png"
+                alt="Linda Hudson"
+                class="staff-img mb-3"
+              />
+              <h3 class="h4">Linda Hudson</h3>
+              <p class="lead">Technical Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+
+    <div class="container">
+      <div class="row justify-content-center bg-light mt-4">
+        <div class="col-md-8">
+          <div
+            id="slides-with-controls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-fluid rounded shadow" src="./683accf396072-file-image-313334403-16x9.avif" alt="" />
+                  </div>
+                  <div class="col-md-6">
+                    <h1>About Hermes</h1>
+                    <p class="lead" style="font-size: 30px">
+                      Hermes company
+                      <br />
+                      delivers the goods
+                    </p>
+                    <p class="lead">
+                      We are best known for our scheduled. We specialize in the
+                      shipment of dry goods. We price by the hundredweight or by
+                      the skid and deliver industry-leading transit times to and
+                      from the USA... including Alaska. It's how our business
+                      started… and we do so much more! Making life easier for
+                      the shipping community is a core company value. Polaris
+                      has developed complementary transportation services
+                      including
+                    </p>
+                    <button class="btn btn-warning" type="submit">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6 bg-light">
+                    <img
+                      class="img-fluid rounded shadow"
+                      src="./download.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-6 bg-light">
+                    <h1>About Hermes</h1>
+                    <p class="lead" style="font-size: 30px">
+                      Hermes company
+                      <br />
+                      delivers the goods
+                    </p>
+                    <p class="lead text-black">
+                      We are best known for our scheduled. We specialize in the
+                      shipment of dry goods. We price by the hundredweight or by
+                      the skid and deliver industry-leading transit times to and
+                      from the USA... including Alaska. It's how our business
+                      started… and we do so much more! Making life easier for
+                      the shipping community is a core company value. Polaris
+                      has developed complementary transportation services
+                      including
+                    </p>
+                    <button class="btn btn-warning" type="submit">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev text-dark"
+              type="button"
+              data-bs-target="#slides-with-controls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-black"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#slides-with-controls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-black"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden text-dark">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-center g-4">
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img
+              src="./creative-elegant-abstract-minimalistic-logo-design-vector-any-brand-company_1287271-12311.avif"
+              alt="Partner Logo"
+              class="partner-logo"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img
+              src="./stock-vector-amazon-logo-icon-logo-sign-art-design-symbol-famous-industry-jeff-bezos-corporate-text-isolated-2270561027.jpg"
+              alt="Partner Logo"
+              class="partner-logo"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img
+              src="./creative-elegant-abstract-minimalistic-logo-design-vector-any-brand-company_1287271-12311.avif"
+              alt="Partner Logo"
+              class="partner-logo"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img
+              src="./stock-vector-amazon-logo-icon-logo-sign-art-design-symbol-famous-industry-jeff-bezos-corporate-text-isolated-2270561027.jpg"
+              alt="Partner Logo"
+              class="partner-logo"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img
+              src="./creative-elegant-abstract-minimalistic-logo-design-vector-any-brand-company_1287271-12311.avif"
+              alt="Partner Logo"
+              class="partner-logo"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img
+              src="./stock-vector-amazon-logo-icon-logo-sign-art-design-symbol-famous-industry-jeff-bezos-corporate-text-isolated-2270561027.jpg"
+              alt="Partner Logo"
+              class="partner-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="py-5 bg-light" id="contact">
+      <div class="container text-center">
+        <h2 class="display-4 fw-bold mb-4">Contact Us Now</h2>
+        <p class="lead mb-5">
+          Get a quote for all your global shipping needs
+        </p>
+        <a href="#" class="btn btn-danger btn-lg">Get Started</a>
+      </div>
+    </section>
+   
+   
+   
+   
+   
+   
+   
+    <div class="container">
+      <div class="row justify-content-center bg-light">
+       
+
+        <div class="col-md-3">
+          <span>
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ff9705; font-size: 40px"
+            ></i>
+            <h3 style="margin-left: 40px; margin-top: -30px">BASEL</h3>
+          </span>
+          <p class="lead">
+            Schneider + Cie AG
+            <br />
+            Solothurnerstrasse 48
+            <br />
+            Postfach 4273
+            <br />
+            CH-4002 Basel
+            <br />
+            Tel +41 61 365 96 90
+            <br />
+            Fax +41 61 365 97 86
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <span>
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ff9705; font-size: 40px"
+            ></i>
+            <h3 style="margin-left: 40px; margin-top: -30px">BASEL CUSTOMS</h3>
+          </span>
+          <p class="lead">
+            Schneider + Cie AG
+            <br />
+            Solothurnerstrasse 48
+            <br />
+            Postfach 4273
+            <br />
+            CH-4002 Basel
+            <br />
+            Tel +41 61 365 96 90
+            <br />
+            Fax +41 61 365 97 86
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <span>
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ff9705; font-size: 40px"
+            ></i>
+            <h3 style="margin-left: 40px; margin-top: -30px">GENEVA</h3>
+          </span>
+          <p class="lead">
+            Schneider + Cie AG
+            <br />
+            Solothurnerstrasse 48
+            <br />
+            Postfach 4273
+            <br />
+            CH-4002 Basel
+            <br />
+            Tel +41 61 365 96 90
+            <br />
+            Fax +41 61 365 97 86
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <span>
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ff9705; font-size: 40px"
+            ></i>
+            <h3 style="margin-left: 40px; margin-top: -30px">ZURICH</h3>
+          </span>
+          <p class="lead">
+            Schneider + Cie AG
+            <br />
+            Solothurnerstrasse 48
+            <br />
+            Postfach 4273
+            <br />
+            CH-4002 Basel
+            <br />
+            Tel +41 61 365 96 90
+            <br />
+            Fax +41 61 365 97 86
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center bg-light">
+        <div class="col-md-3">
+          <span>
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ff9705; font-size: 40px"
+            ></i>
+            <h3 style="margin-left: 40px; margin-top: -30px">ZURICH AIRPORT</h3>
+          </span>
+          <p class="lead">
+            Schneider + Cie AG
+            <br />
+            Solothurnerstrasse 48
+            <br />
+            Postfach 4273
+            <br />
+            CH-4002 Basel
+            <br />
+            Tel +41 61 365 96 90
+            <br />
+            Fax +41 61 365 97 86
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <span>
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ff9705; font-size: 40px"
+            ></i>
+            <h3 style="margin-left: 40px; margin-top: -30px">ZURICH COURIER</h3>
+          </span>
+          <p class="lead">
+            Schneider + Cie AG
+            <br />
+            Solothurnerstrasse 48
+            <br />
+            Postfach 4273
+            <br />
+            CH-4002 Basel
+            <br />
+            Tel +41 61 365 96 90
+            <br />
+            Fax +41 61 365 97 86
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <span>
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ff9705; font-size: 40px"
+            ></i>
+            <h3 style="margin-left: 40px; margin-top: -30px">WEIL AM RHEIN</h3>
+          </span>
+          <p class="lead">
+            Schneider + Cie AG
+            <br />
+            Solothurnerstrasse 48
+            <br />
+            Postfach 4273
+            <br />
+            CH-4002 Basel
+            <br />
+            Tel +41 61 365 96 90
+            <br />
+            Fax +41 61 365 97 86
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <span>
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ff9705; font-size: 40px"
+            ></i>
+            <h3 style="margin-left: 40px; margin-top: -30px">PRATTELN</h3>
+          </span>
+          <p class="lead">
+            Schneider + Cie AG
+            <br />
+            Solothurnerstrasse 48
+            <br />
+            Postfach 4273
+            <br />
+            CH-4002 Basel
+            <br />
+            Tel +41 61 365 96 90
+            <br />
+            Fax +41 61 365 97 86
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
